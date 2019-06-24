@@ -9,6 +9,7 @@ const fileStore = require('../stores/fileStore');
 const actions = require('../actions');
 
 class App extends React.Component {
+  
   componentDidMount() {
     // TODO
   }
