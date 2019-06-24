@@ -17,17 +17,17 @@ class App extends React.Component {
     };
   }
   componentDidMount() {
-    // TODO
+    this.removeListener = fileStore.addListener(files => this.setState({files: files}));
   }
   componentWillUnmount() {
-    // TODO
+    this.removeListener();
   }
   handleChange(ev) {
     const { selectedFileIndex } = this.state;
-    // TODO Dispatch action
+    actions.updateFile(this.state.selectedFileIndex, ev.target.value);
   }
   handleSelect(selectedFileIndex) {
-    // TODO Update selectedFileIndex state
+    this.setState(selectedFileIndex);
   }
   handleAdd(ev) {
     ev.preventDefault();
