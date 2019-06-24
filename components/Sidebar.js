@@ -3,10 +3,10 @@
 const React = require('react');
 const SidebarItem = require('./SidebarItem');
 
-class Sidebar extends Reactconstructor(props) {
+class Sidebar extends constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-  }	  }
+  }
 
    handleClick(index, e) {
     e.preventDefault();
