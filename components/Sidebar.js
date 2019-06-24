@@ -25,7 +25,6 @@ class Sidebar extends Reactconstructor(props) {
         />
     );
   }
-  }
   render() {
     const { files, selectedFileIndex, onAdd } = this.props;
 
