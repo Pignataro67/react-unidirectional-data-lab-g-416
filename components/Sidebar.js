@@ -30,6 +30,7 @@ class Sidebar extends Reactconstructor(props) {
 
     return (
       <ul className="sidebar">
+      {this.generateSidebarItems()}
       </ul>
     );
   }
