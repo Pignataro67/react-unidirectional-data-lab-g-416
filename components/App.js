@@ -9,7 +9,13 @@ const fileStore = require('../stores/fileStore');
 const actions = require('../actions');
 
 class App extends React.Component {
-  
+  constructor(props) {
+    super(props);
+    this.state = {
+      files: fileStore.getState(),
+      selectedFileIndex: 0
+    };
+  }
   componentDidMount() {
     // TODO
   }
